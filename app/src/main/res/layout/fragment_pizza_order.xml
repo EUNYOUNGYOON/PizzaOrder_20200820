@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".fragments.PizzaOrderFragment">
+    android:gravity="center">
 
     //2-1 Fragment
     //4. ListView 생성 - 액티비티 화면 (xml)에 리스트뷰 배치 + id 부여 PizzaOrderFramgent이동
+    //4-1 List에 뿌려질 샘플 List 1개를 설정해야한다. 패키지 생성 및 Pizza클래스 생성, pizza_list_item.xml 생성
     <ListView
         android:id="@+id/pizzaListView"
         android:layout_width="match_parent"

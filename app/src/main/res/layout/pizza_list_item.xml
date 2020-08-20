@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    //4-3 ListView Item을 생성하기 위해 LinearLayout 생성
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        // Item에서 Logo Image생성
+        // CircleImageView 는 build.gradle에서 implement해야한다.
+        // implementation 'de.hdodenhof:circleimageview:3.1.0'
+        // implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logoNameImgView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/colorBlack"
+            android:src="@mipmap/ic_launcher_round"
+            app:civ_border_width="2dp"/>
+
+        // 데이터들이 있는 Layout
+        // center_vertical을 안하면 글씨들이 제일 위에 있으니 글씨가 높이의 center에 있게 설정
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/pizzaNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="피자이름"
+                android:textSize="25sp"
+                android:textColor="#FFA509"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -18,9 +18,10 @@ class MyPageFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_my_page, container, false)
     }
 
+    //onActivityCreated override하기
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        
+
         // 닉네임 변경 로직 필요
     }
     

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     //3. Tab설정하기
@@ -15,7 +15,7 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabIndicatorColor="#000000" />
+        app:tabIndicatorColor="@color/colorBlack" />
 
 
     //2. Fragment View Pager + TabLayout 연동

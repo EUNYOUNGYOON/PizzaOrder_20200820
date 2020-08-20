@@ -18,7 +18,7 @@ class PizzaOrderFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_pizza_order, container, false)
     }
 
-    //4-1 onActivityCreated override하기
+    //onActivityCreated override하기
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         // 리스트뷰에서 피자 가게 뿌려주기
