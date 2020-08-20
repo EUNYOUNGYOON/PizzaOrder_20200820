@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".MainActivity">
-    
+
+    //3. Tab설정하기
+    // TabLayout을 설정하기 위해서는 build.gradle
+    // implementation 'com.android.support:design:30.0.1'
+    // TabLayout을 생성했으면 adapters패키지생성 및 adapter 클래스 생성
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#000000" />
+
+
+    //2. Fragment View Pager + TabLayout 연동
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
