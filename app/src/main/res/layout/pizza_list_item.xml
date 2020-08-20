@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="15dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     //4-3 ListView Item을 생성하기 위해 LinearLayout 생성
@@ -16,9 +17,9 @@
         // implementation 'com.github.chrisbanes:PhotoView:2.3.0'
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/logoNameImgView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/logoUrlImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:scaleType="centerCrop"
             app:civ_border_color="@color/colorBlack"
             android:src="@mipmap/ic_launcher_round"
@@ -34,19 +35,15 @@
             android:paddingLeft="15dp">
 
             <TextView
-                android:id="@+id/pizzaNameTxt"
+                android:id="@+id/pizzaNameListTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="피자이름"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textColor="#FFA509"
                 android:textStyle="bold"/>
         </LinearLayout>
 
     </LinearLayout>
-
-
-
-
 
 </LinearLayout>
