@@ -33,9 +33,10 @@ class MainActivity : BaseActivity() {
         mainViewPager.adapter = mMainPagerAdapter
         tabLayout.setupWithViewPager(mainViewPager)
 
-        //4-4 실제로 뿌려줄 데이터들을 ArrayList변수에 추가해주자.
+        //4-6 실제로 뿌려줄 데이터들을 ArrayList변수에 추가해주자.
         // val mPizzaList = ArrayList<Pizza>()
         //val logoName: String, pizzaName: String, val phoneNum : String
+        // 피자헛, 파파존스, 도미노 피자, 미스터 피자
 
     }
 
